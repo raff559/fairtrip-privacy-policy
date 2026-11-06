@@ -1,0 +1,1 @@
+# fairtrip-privacy-policy
