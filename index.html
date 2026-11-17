@@ -28,24 +28,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Política de Privacidad de FairTrip & FairTrip Plugin</h1>
+        <h1>Política de Privacidad de FairTrip &amp; FairTrip Plugin</h1>
         <p><strong>Última actualización:</strong> Noviembre 2026</p>
 
-        <h2>1. Procesamiento de Datos Local</h2>
-        <p>FairTrip procesa todos los datos en el dispositivo de forma totalmente local. La captura de pantalla en primer plano (MediaProjection) y el servicio de accesibilidad son utilizados únicamente para la lectura automática de tarifas de viaje en pantalla y la ejecución de gestos de respuesta hands-free para asistencia al conductor mientras conduce.</p>
+        <h2>1. Procesamiento de Pantalla Local</h2>
+        <p>FairTrip utiliza la captura de pantalla en primer plano (MediaProjection) y reconocimiento de texto en el dispositivo (ML Kit) únicamente cuando el usuario activa el asistente para analizar ofertas de viaje en pantalla. No se graban, almacenan ni transmiten capturas de pantalla a servidores externos.</p>
 
-        <h2>2. Uso del Servicio de Accesibilidad</h2>
-        <p>FairTrip Plugin utiliza el Servicio de Accesibilidad únicamente cuando el usuario lo activa activamente para interactuar con aplicaciones de transporte (inDrive, Uber, DiDi). Este servicio no lee contraseñas, mensajes personales, datos bancarios ni información confidencial.</p>
+        <h2>2. Uso del Servicio de Accesibilidad (FairTrip Plugin)</h2>
+        <p>La aplicación principal FairTrip no declara ni ejecuta servicios de accesibilidad propios. El módulo complementario independiente FairTrip Plugin utiliza el Servicio de Accesibilidad únicamente cuando el usuario lo activa de forma expresa para asistir la respuesta manos libres en aplicaciones de transporte (inDrive, Uber, DiDi). Este servicio no lee contraseñas, mensajes personales, datos bancarios ni información confidencial.</p>
 
-        <h2>3. Protección y Almacenamiento de Datos</h2>
-        <p>Ninguna captura de pantalla, dato de ubicación ni información personal es grabada, almacenada en servidores externos ni vendida a terceros.</p>
+        <h2>3. Datos Recopilados, Ubicación y Almacenamiento</h2>
+        <p>Para el registro, activación de licencias y prevención de fraude, FairTrip recopila y almacena de forma cifrada en tránsito (HTTPS/TLS) en Firebase Firestore los siguientes datos: <strong>Nombre, Apellido, Número de teléfono e Identificador técnico de dispositivo (ANDROID_ID)</strong>.</p>
+        <p>Si el usuario activa opcionalmente funciones de filtrado geográfico como <em>Retorno a Casa</em> o <em>Zonas</em>, la aplicación utiliza la ubicación del dispositivo (en primer o segundo plano únicamente mientras el servicio está activo) para evaluar si el destino del viaje coincide con la ruta configurada.</p>
+        <p>Las suscripciones dentro de la aplicación se procesan mediante Google Play Billing. FairTrip no vende ni comparte datos personales con terceros.</p>
 
-        <h2>4. Contacto</h2>
-        <p>Si tienes dudas o consultas sobre esta política de privacidad, puedes contactarnos a través del soporte oficial de FairTrip.</p>
+        <h2>4. Eliminación de Cuenta y Datos</h2>
+        <p>Los usuarios pueden eliminar sus datos personales directamente dentro de la aplicación desde la sección <strong>Privacidad &amp; Gestión de Cuenta &rarr; Borrar Datos</strong>, o solicitar la eliminación de su cuenta y datos asociados sin abrir la aplicación escribiendo al soporte oficial en <a href="https://wa.me/18096080718" target="_blank" rel="noopener noreferrer">https://wa.me/18096080718</a> (indicando su número de teléfono registrado o Device ID).</p>
+        <p>Al procesar la eliminación, se borran o anonimizan de forma permanente el nombre, apellido y número de teléfono de los registros activos. Para prevenir el abuso y la reutilización reiterada de la prueba gratuita de 3 días en un mismo dispositivo o línea, se conserva únicamente un identificador técnico anónimo mediante hash criptográfico no reversible (SHA-256).</p>
+
+        <h2>5. Contacto</h2>
+        <p>Si tienes dudas sobre esta política de privacidad, necesitas soporte técnico o tienes preguntas sobre los planes disponibles, puedes contactarnos a través del soporte oficial de FairTrip en <a href="https://wa.me/18096080718" target="_blank" rel="noopener noreferrer">https://wa.me/18096080718</a>.</p>
 
         <footer>
             <p>&copy; 2026 FairTrip. Todos los derechos reservados.</p>
         </footer>
     </div>
+</body>
 </body>
 </html>
